@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- Your result.html template -->
+<h1>Text to MP3 Conversion Result</h1>
+<p>User ID: {{ text_to_speech_obj.user_id }}</p>
+<p>Text: {{ text_to_speech_obj.text }}</p>
+<audio controls>
+  <source src="{{ text_to_speech_obj.mp3_file.url }}" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+{% endblock %}
