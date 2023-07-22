@@ -9,7 +9,6 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-import os
 
 from pathlib import Path
 
@@ -27,9 +26,6 @@ SECRET_KEY = 'django-insecure-^cv=p3bjf1862!(^-mdnxuu3c^+nhw35yx-$xi2s@)w9bk6$b-
 DEBUG = True
 
 ALLOWED_HOSTS = [ '127.0.0.1','71.191.225.65','192.168.1.69','robera.xyz',]
-
-# settings.py
-
 
 
 # Application definition
@@ -123,13 +119,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = '/home/robera/static/' 
-# Add this line to specify the path for saving media files
-# settings.py
-
-# Add this line to specify the URL for serving media files during development
-MEDIA_URL = '/media/'
-
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
